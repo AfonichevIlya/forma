@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="form">
+      <div class="info">
+        <h1 style="color: rgb(248, 210, 154)">Персональные данные</h1>
+        <h3>Пожалуйста, заполните поля</h3>
+        <hr />
+      </div>
+      <div class="personal">
+        <label><b>Имя</b></label>
+        <input
+          type="text"
+          placeholder="Введите ваше имя"
+          name="name1"
+          id="name"
+        />
+
+        <label><b>Фамилия</b></label>
+        <input
+          type="text"
+          placeholder="Введите вашу фамилию"
+          name="last_name"
+          id="last_name"
+        />
+        <label><b>Почта</b></label>
+        <input
+          type="text"
+          placeholder="Введите вашу почту"
+          name="email"
+          id="email"
+          required
+        />
+
+        <label><b>Номер телефона</b></label>
+        <input
+          type="tel"
+          placeholder="Введите ваш номер"
+          name="num"
+          id="number"
+        />
+
+        <label><b>Пароль</b></label>
+        <input
+          type="password"
+          placeholder="Введите ваш пароль"
+          name="psw"
+          id="pass"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+      <hr />
+      <h3>Ваш пол:</h3>
+      <div class="gender">
+        <label for="male">Мужской</label>
+        <input type="radio" id="male" name="gen" value="Мужской" />
+
+        <label for="female">Женский</label>
+        <input type="radio" id="female" name="gen" value="Женский" />
+      </div>
+      <hr />
+
+      <h3>Плюсы нашей работы:</h3>
+      <div class="check">
+        <div>
+          <label for="checkbox1">Цена</label>
+          <input type="checkbox" name="checkbox1" value="Цена" id="check" />
+        </div>
+        <div>
+          <label for="checkbox2">Скорость</label>
+          <input type="checkbox" name="checkbox2" value="Скорость" />
+        </div>
+        <div>
+          <label for="checkbox3">Качество обслуживания</label>
+          <input
+            type="checkbox"
+            name="checkbox3"
+            value="Качество обслуживания"
+          />
+        </div>
+        <div>
+          <label for="checkbox4">Хорошее отношение</label>
+          <input type="checkbox" name="checkbox4" value="Хорошее отношение" />
+        </div>
+        <div>
+          <label for="checkbox5">Качество товара</label>
+          <input type="checkbox" name="checkbox5" value="Качество товара" />
+        </div>
+      </div>
+      <hr />
+      <h3>Введите ваше сообщение:</h3>
+      <input
+        type="text"
+        class="mes"
+        placeholder="Введите ваше сообщение"
+        name="mes"
+        id="message"
+        required
+      />
+      <div>
+        <label for="">Добавьте файл</label>
+        <input name="myFile" type="file" />
+      </div>
+      <div>
+        <label for="start">Когда вы к нам обратились</label>
+        <input
+          type="datetime-local"
+          id="start"
+          name="meeting-time"
+          value=""
+          class="data"
+        />
+      </div>
+      <hr />
+      <div class="buttons">
+        <input type="submit" name="sub" id="submit" class="sub" />
+        <input type="reset" id="delete" />
+      </div>
+    </form>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
